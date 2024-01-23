@@ -2,18 +2,21 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
-<body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                Jason is testing GitHub Codespaces <span class="heart">♥️</span> Flask, hello world
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
-</body>
+    <body>
+        <div class="App">
+            <header class="App-header">
+                <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
+                <p>
+                    Jason is testing GitHub Codespaces <span class="heart">♥️</span> Flask, hello world
+                </p>
+                <p class="small">
+                    Edit <code>templates/index.html</code> and refresh to see your changes!
+                </p>
+                <div>
+                    <p>{{ joke }}</p>
+                </div>
+            </header>
+        </div>
+    </body>
 
 </html>
